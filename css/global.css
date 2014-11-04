@@ -78,6 +78,10 @@ a{
     user-select: none;
 }
 
+.defaultCursor {
+cursor:default;
+}
+
 @media only screen and (max-width: 480px) {
   #menu-Ponta{
     width: 100%;
@@ -91,4 +95,11 @@ a{
   .dropdown-menu>li{
   display: inline;
   }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  
 }
