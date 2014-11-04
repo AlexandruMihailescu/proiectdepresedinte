@@ -88,4 +88,7 @@ a{
   #menu-Iohannis{
     width: 100%;
   }
+  .dropdown-menu>li{
+  display: inline;
+  }
 }
