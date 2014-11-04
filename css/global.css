@@ -5,7 +5,6 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  min-width: 480px;
 }
 
 #question{
@@ -77,4 +76,16 @@ a{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #menu-Ponta{
+    width: 100%;
+  }
+  #menu-Despre{
+    width: 100%;
+  }
+  #menu-Iohannis{
+    width: 100%;
+  }
 }
