@@ -1,3 +1,6 @@
+@media screen {
+    @-ms-viewport { width: device-width; }
+}
 body {
   font-family: sans-serif;
   margin: 0;
