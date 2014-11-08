@@ -9,6 +9,10 @@ html, body {
   font-family: sans-serif;
 }
 
+.choose{
+  background-color: rgba(51,51,51,0.8);
+}
+
 .frame{
   float: left;
 }
@@ -66,7 +70,7 @@ html, body {
   }
   #Ponta .navbar{
     bottom: 69vh;
-    right: 1vw;
+    right: 7vw;
     text-align: left;
   }
   #Neutru .navbar{
@@ -77,8 +81,26 @@ html, body {
   }
   #Iohannis .navbar{
     top: 69vh;
-    left: 1vw;
+    left: 7vw;
     text-align: right;
+  }
+
+  .choose{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+  }
+  #Ponta .choose{
+    right: 1vw;
+    left: 94vw;
+    top: 1vh;
+    bottom: 69vh;
+  }
+  #Iohannis .choose{
+    right: 94vw;
+    left: 1vw;
+    top: 69vh;
+    bottom: 1vh;
   }
 }
 
@@ -112,5 +134,20 @@ html, body {
     top: 1vh;
     left: 69vw;
     text-align: left;
+  }
+  .choose{
+    position: absolute;
+    top: 94vh;
+    bottom: 1vh;
+    display: inline-block;
+    text-align: center;
+  }
+  #Ponta .choose{
+    right: 69vw;
+    left: 1vw;
+  }
+  #Iohannis .choose{
+    right: 1vw;
+    left: 69vw;
   }
 }
