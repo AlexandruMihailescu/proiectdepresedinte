@@ -1,3 +1,12 @@
+.quiz{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 html, body {
   margin: 0px;
   padding: 0px;
@@ -96,16 +105,18 @@ button, a{
     text-align: center;
   }
   #Ponta .choose{
-    right: 1vw;
-    left: 94vw;
-    top: 1vh;
-    bottom: 69vh;
+    right: 0vw;
+    left: calc(100vw - 7vh);
+    top: 0vh;
+    bottom: 68vh;
+    padding: 1vh;
   }
   #Iohannis .choose{
-    right: 94vw;
-    left: 1vw;
-    top: 69vh;
-    bottom: 1vh;
+    right: calc(100vw - 7vh);
+    left: 0vw;
+    top: 68vh;
+    bottom: 0vh;
+    padding: 1vh;
   }
 }
 
@@ -143,17 +154,17 @@ button, a{
   .choose{
     position: absolute;
     top: 92vh;
-    bottom: 1vh;
-    padding: auto;
+    bottom: 0vh;
+    padding: 1vh 1vw;
     display: inline-block;
     text-align: center;
   }
   #Ponta .choose{
-    right: 69vw;
-    left: 1vw;
+    right: 68vw;
+    left: 0vw;
   }
   #Iohannis .choose{
-    right: 1vw;
-    left: 69vw;
+    right: 0vw;
+    left: 68vw;
   }
 }
