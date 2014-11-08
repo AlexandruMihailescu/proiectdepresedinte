@@ -11,7 +11,6 @@ html, body {
 
 .frame{
   float: left;
-  padding: 1vh, 1vw;
 }
 
 #Ponta {
@@ -32,64 +31,86 @@ html, body {
   background: #1781C4;
 }
 
+.social-ref {
+  width: 5vh;
+  height: 5vh;
+  display: inline-block;
+}
+
+.social-ref.www{
+  background-image: url("../assets/www.png");
+  background-size: 100% 100%;
+}
+
+.social-ref.fb{
+  background-image: url("../assets/facebook.png");
+  background-size: 100% 100%;
+}
+
+.social-ref.twitter{
+  background-image: url("../assets/twitter.png");
+  background-size: 100% 100%;
+}
+
 @media (max-aspect-ratio: 3/2){
   .frame#Ponta, .frame#Iohannis{
     width: 100vw;
-    height: 35vh;
+    height: 32vh;
   }
   .frame#Neutru{
     width: 100vw;
-    height: 30vh;
+    height: 36vh;
   }
   .navbar{
     position: absolute;
-    width: 78vw;
   }
   #Ponta .navbar{
-    bottom: 66vh;
-    left: 1vw;
+    bottom: 69vh;
+    right: 1vw;
     text-align: left;
   }
   #Neutru .navbar{
-    left: 10vw;
-    right: 10vw;
-    top: 36vh;
+    left: 1vw;
+    right: 1vw;
+    top: 33vh;
     text-align: center;
   }
   #Iohannis .navbar{
-    top: 66vh;
-    right: 1vw;
+    top: 69vh;
+    left: 1vw;
     text-align: right;
   }
 }
 
 @media (min-aspect-ratio: 3/2){
   .frame#Ponta, .frame#Iohannis{
-    width: 35vw;
+    width: 32vw;
     height: 100vh;
   }
   .frame#Neutru{
-    width: 30vw;
+    width: 36vw;
     height: 100vh;
   }
   .navbar{
     position: absolute;
-    width: 30vw;
   }
   #Ponta .navbar{
+    width: 30vw;
     top: 1vh;
-    right: 66vw;
+    right: 69vw;
     text-align: right;
   }
   #Neutru .navbar{
-    left: 35vw;
-    right: 35vw;
+    width: 34vw;
+    left: 33vw;
+    right: 33vw;
     top: 1vh;
     text-align: center;
   }
   #Iohannis .navbar{
+    width: 30vw;
     top: 1vh;
-    left: 66vw;
+    left: 69vw;
     text-align: left;
   }
 }
