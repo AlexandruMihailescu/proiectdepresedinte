@@ -1,14 +1,17 @@
 function toggleMode( event ) { 
   var target = $( event.target ); 
-  if (target.is(".navbar")) { 
+  if (target.is(".toggleButton")||target.is(".navbar")) { 
     $(".details").toggle(); 
     $(".quiz").toggle(); 
+    if ($(".quiz").is(":visible"))
+      $(".toggleButton").text("Pauză");
+    else
+      $(".toggleButton").text("Înapoi");
   } 
 } 
-$(document).on('click', function(event) { 
-  if (!$(event.target).closest('.menu').length) { 
-    $(".menu").find(".dropdown-menu").hide(); 
-  } 
-}); 
-$(".navbar").click(toggleMode); 
+$(".toggleButton").click(toggleMode); 
 $(".quiz").hide();
+
+function updateOnResize(){
+  
+}

@@ -1,8 +1,6 @@
 .quiz{
-  z-index: 1;
 }
 .details{
-  z-index: 0;
 }
 
 html, body {
@@ -11,16 +9,19 @@ html, body {
   max-height: 100%;
   max-width: 100%;
   overflow: hidden;
-  font-size: 5vh;
+  font-size: 3vh;
   color: #ffffff;
   font-family: sans-serif;
 }
 
 button, a{
-  font-size: 5vh;
   color: #ffffff;
+  text-decoration: none;
 }
 
+a:hover{
+  background: rgba(34,34,34,0.8);
+}
 .choose{
   background-color: rgba(51,51,51,0.8);
 }
@@ -68,6 +69,14 @@ button, a{
   background-size: 100% 100%;
 }
 
+.navbar{
+  font-size: 5vh;
+}
+
+.choose{
+  font-size: 5vh;
+}
+
 @media (max-aspect-ratio: 3/2){
   .frame#Ponta, .frame#Iohannis{
     width: 100vw;
@@ -111,8 +120,9 @@ button, a{
   #Neutru .contents{
     right: 1vw;
     left: 1vw;
-    top: 33vh;
+    top: 39vh;
     bottom: 33vh;
+    height: 28vh;
   }
 
   #Iohannis .contents{
@@ -140,6 +150,20 @@ button, a{
     top: 68vh;
     bottom: 0vh;
     padding: 1vh;
+  }
+
+  .toggleButton{
+    position: absolute;
+    top: 63vh;
+    bottom: 32vh;
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vh;
+  }
+  .toggleButton:hover{
+    background: rgba(34,34,34,0.8);
   }
 }
 
