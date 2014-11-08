@@ -11,7 +11,3 @@ function toggleMode( event ) {
 } 
 $(".toggleButton").click(toggleMode); 
 $(".quiz").hide();
-
-function updateOnResize(){
-  
-}
