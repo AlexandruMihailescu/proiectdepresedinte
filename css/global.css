@@ -1,115 +1,95 @@
-@media screen {
-    @-ms-viewport { width: device-width; }
-}
-body {
+html, body {
+  margin: 0px;
+  padding: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 5vh;
+  color: #ffffff;
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-#question{
-  height: 10px;
-  padding: 10px;
-}
-
-a{
-  color: #ffffff;
-}
-
-.navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  height: 18px;
-}
-
-.menu{
-  display: inline;
+.frame{
   float: left;
-  font-size: 16px;
+  padding: 1vh, 1vw;
 }
 
-.menu a, div{
-  padding: 10px;
-}
-.dropdown-menu{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.dropdown-menu>li{
-  display: block;
-}
-
-#menu-Ponta{
+#Ponta {
+  margin: 0px;
+  padding: 0px;
   background: #DC2C23;
-  width: 30%;
-  min-width: 144px;
-  text-align: right;
 }
 
-#menu-Despre{
+#Neutru {
+  margin: 0px;
+  padding: 0px;
   background: #333333;
-  width: 40%;
-  min-width: 192px;
-  text-align: center;
 }
 
-#menu-Despre>.dropdown-menu{
-  font-size: 80%;
-  text-align: justify;
-  padding: 10px;
-}
-
-#menu-Iohannis{
+#Iohannis {
+  margin: 0px;
+  padding: 0px;
   background: #1781C4;
-  width: 30%;
-  min-width: 144px;
-  text-align: left;
 }
 
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.defaultCursor {
-cursor:default;
-}
-
-.helpCursor{
-cursor: help;
-}
-
-.pointerCursor{
-cursor: pointer;
-}
-  .dropdown-menu>li{
-  display: inline;
+@media (max-aspect-ratio: 3/2){
+  .frame#Ponta, .frame#Iohannis{
+    width: 100vw;
+    height: 35vh;
   }
-@media only screen and (max-width: 480px) {
-  #menu-Ponta{
-    width: 100%;
+  .frame#Neutru{
+    width: 100vw;
+    height: 30vh;
   }
-  #menu-Despre{
-    width: 100%;
+  .navbar{
+    position: absolute;
+    width: 78vw;
   }
-  #menu-Iohannis{
-    width: 100%;
+  #Ponta .navbar{
+    bottom: 66vh;
+    left: 1vw;
+    text-align: left;
   }
-  .dropdown-menu>li{
-  display: inline;
+  #Neutru .navbar{
+    left: 10vw;
+    right: 10vw;
+    top: 36vh;
+    text-align: center;
+  }
+  #Iohannis .navbar{
+    top: 66vh;
+    right: 1vw;
+    text-align: right;
   }
 }
 
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 1024px) {
-  
+@media (min-aspect-ratio: 3/2){
+  .frame#Ponta, .frame#Iohannis{
+    width: 35vw;
+    height: 100vh;
+  }
+  .frame#Neutru{
+    width: 30vw;
+    height: 100vh;
+  }
+  .navbar{
+    position: absolute;
+    width: 30vw;
+  }
+  #Ponta .navbar{
+    top: 1vh;
+    right: 66vw;
+    text-align: right;
+  }
+  #Neutru .navbar{
+    left: 35vw;
+    right: 35vw;
+    top: 1vh;
+    text-align: center;
+  }
+  #Iohannis .navbar{
+    top: 1vh;
+    left: 66vw;
+    text-align: left;
+  }
 }
