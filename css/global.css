@@ -84,8 +84,8 @@ button, a{
   }
   #Ponta .navbar{
     bottom: 69vh;
-    right: 7vw;
-    text-align: left;
+    right: calc(7vh + 1vw);
+    text-align: right;
   }
   #Neutru .navbar{
     left: 1vw;
@@ -95,8 +95,33 @@ button, a{
   }
   #Iohannis .navbar{
     top: 69vh;
-    left: 7vw;
-    text-align: right;
+    left: calc(7vh + 1vw);
+    text-align: left;
+  }
+
+  .contents{
+    position: absolute;
+  }
+
+  #Ponta .contents{
+    right: calc(7vh+1vw);
+    left: 1vw;
+    bottom: 75vh;
+    top: 1vh;
+  }
+
+  #Neutru .contents{
+    right: 1vw;
+    left: 1vw;
+    top: 33vh;
+    bottom: 33vh;
+  }
+
+  #Iohannis .contents{
+    right: 1vw;
+    left: calc(7vh+1vw);
+    bottom: 1vh;
+    top: 75vh;
   }
 
   .choose{
@@ -151,6 +176,28 @@ button, a{
     left: 69vw;
     text-align: left;
   }
+
+  .contents{
+    position: absolute;
+    top: 7vh;
+    bottom: 9vh;
+  }
+
+  #Ponta .contents{
+    left: 1vw;
+    right: 69vw;
+  }
+
+  #Neutru .contents{
+    left: 33vw;
+    right: 33vw;
+  }
+
+  #Iohannis .contents{
+    left: 69vw;
+    right: 1vw;
+  }
+
   .choose{
     position: absolute;
     top: 92vh;
